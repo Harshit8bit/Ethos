@@ -96,10 +96,9 @@ To run this project on your local machine, follow these steps:
 
 ## 📸 Project Gallery
 
-*(This is a great place to add 2-3 screenshots of your app)*
 
 
-| <img width="1912" height="1028" alt="Image" src="https://github.com/user-attachments/assets/3a9fa9c8-1488-4222-86e1-780ef0837b5f" /> | <img width="1897" height="1024" alt="Image" src="https://github.com/user-attachments/assets/851b7a83-6e89-42f5-a4f8-c92aba51fded" /> | <img width="1889" height="1014" alt="Image" src="https://github.com/user-attachments/assets/adb0cd81-8a74-48f9-a9ce-0824cd519c77" /> 
+<img width="1889" height="1014" alt="Image" src="https://github.com/user-attachments/assets/adb0cd81-8a74-48f9-a9ce-0824cd519c77" /> | <img width="1897" height="1024" alt="Image" src="https://github.com/user-attachments/assets/851b7a83-6e89-42f5-a4f8-c92aba51fded" /> | <img width="1912" height="1028" alt="Image" src="https://github.com/user-attachments/assets/3a9fa9c8-1488-4222-86e1-780ef0837b5f" /> | 
 
 
 
@@ -107,6 +106,6 @@ To run this project on your local machine, follow these steps:
 
 ## 👨‍💻 Author
 
-* **Harshit [Your Last Name]**
+* **Harshit [Harshit Agarwal]**
 * GitHub: [Harshit8bit]
 * LinkedIn: [www.linkedin.com/in/harshit-agarwal-bbb474326]
