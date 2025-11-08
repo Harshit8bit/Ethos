@@ -42,6 +42,26 @@ This project combines a robust set of modern web technologies:
 
 ---
 
+## 🏛️ Project Architecture: MVC
+
+This project is built using the classic **Model-View-Controller (MVC)** design pattern, which separates the application's concerns into three distinct parts:
+
+
+
+[<img width="1141" height="587" alt="Image" src="https://github.com/user-attachments/assets/bf00390e-19a3-4506-a23b-f1cc24ab62e3" />]
+
+
+> * **Model (M):** Manages all the data, logic, and rules of the application.
+>     * **In Ethos:** This is handled by our **Mongoose Schemas** in the `/models` directory (e.g., `listing.js`, `user.js`, `review.js`). They define the structure of our data in MongoDB and how to interact with it.
+
+> * **View (V):** The user interface (UI) that the user sees and interacts with.
+>     * **In Ethos:** These are the **EJS templates** in the `/views` directory (e.g., `show.ejs`, `index.ejs`). They are responsible for rendering the HTML pages that are sent to the user's browser.
+
+> * **Controller (C):** Acts as the "brain" or "middle-man" that receives user requests, interacts with the Model to fetch or save data, and then tells the View what to render.
+>     * **In Ethos:** This is all the logic contained in our `/controllers` directory (e.g., `listingController.js`). The **Routes** (in `/routes`) file acts as the switchboard, directing requests to the correct Controller function.
+
+---
+
 ## 🏁 Getting Started
 
 To run this project on your local machine, follow these steps:
