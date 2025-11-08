@@ -1,0 +1,170 @@
+
+body{
+   font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-optical-sizing: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+/* homepage */
+/* Basic Body & Font Styling */
+body {
+    font-family: 'Poppins', sans-serif; /* A nice, modern font */
+}
+.listing-link {
+  text-decoration: none; /* Removes the underline */
+  color: inherit;         /* Makes the text inherit its color (e.g., black) instead of turning blue */
+}
+
+/* Optional: Add a subtle hover effect */
+.listing-link .card:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    min-height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+.search-bar .form-control {
+    border-radius: 50rem; /* Ensures inputs are fully rounded inside the pill */
+}
+
+.search-bar .form-control:focus {
+    box-shadow: none;
+    border-color: #0d6efd; /* Bootstrap primary color */
+}
+
+/* Listing Card Styling */
+.listing-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.listing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Host Call-to-Action Section */
+.host-cta {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1533104816931-20fa69146ca2?auto=format&fit=crop&w=1374&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Creates a cool parallax effect */
+}
+
+
+
+
+.container{
+    flex: 1;
+}
+
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-house{
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+nav-link{
+    color: #222222!important;
+}
+
+/* footer */
+.f-info{
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+.f-info-links , .f-info-socials , .f-info-brand{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.f-info-socials i{
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+
+/* cards */
+.card{
+    border: none !important;
+    margin-bottom: 2rem;
+    box-shadow: none !important;
+}
+
+.review-card {
+  border: 1px solid #000 !important;
+  border-radius: 8px; 
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+.card-text p{
+    font-weight: 400 !important;
+}
+
+.listing-link{
+    text-decoration: none;
+}
+
+/* card-effect */
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* showpage */
+.show-img {
+  max-height: 50vh;
+  object-fit: cover; 
+}
+.btns{
+    display: flex;
+}
+
+
+/* MAP */
+#map { 
+    height: 400px;
+    width: 100vh;
+
+ }

@@ -1,0 +1,68 @@
+<% layout("/layouts/boilerplate") %>
+
+<body>
+
+    <header class="hero-section text-white text-center d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Go Beyond Visiting. Find Your Ethos.</h1>
+            <p class="lead my-4">Unlock authentic homes and curated experiences that connect you to the heart of a place. <br> Stop being a tourist and start belonging.</p>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="container my-5 py-5">
+            <h2 class="text-center mb-5">Stays With Soul</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    <% for(let listing of allListing.slice(0, 4)) { %>
+                    <div class="col">
+                        <a href="/listings/<%= listing._id %>" class="listing-link">
+                            <div class="card border-0 shadow-sm h-100">
+                                <img src="<%= listing.image.url %>" class="card-img-top" alt="<%= listing.title %>" style="height: 15rem; object-fit: cover;">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <b><%= listing.title %></b> <br>
+                                        &#8377;<%= listing.price.toLocaleString("en-IN") %> / night
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <% } %>
+            </div>
+        </section>
+
+        <section class="bg-light py-5">
+            <div class="container text-center">
+                <h2 class="mb-5">A Stay, Not Just a Space</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <i class="fas fa-map-marked-alt fa-3x text-primary mb-3"></i>
+                        <h3>Discover Unique Homes</h3>
+                        <p>Every home on Ethos is chosen for its character and the story it tells. Find places you won't see anywhere else.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                        <h3>Connect with Curators</h3>
+                        <p>Our hosts are more than hosts; they are local curators who share their city's secrets and welcome you into their community.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fas fa-heart fa-3x text-primary mb-3"></i>
+                        <h3>Live Like You Belong</h3>
+                        <p>From the local market to the neighborhood cafe, experience a destination from the inside out. Truly belong, even for a day.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid my-5 py-5 text-center text-white host-cta">
+            <div class="container">
+                <h2 class="display-5 fw-bold">Share Your Corner of the World</h2>
+                <p class="lead my-4">Open your door to meaningful connections. Host travelers seeking authenticity and become a curator of your culture on Ethos.</p>
+                <a href="/hosts/new" class="btn btn-light btn-lg rounded-pill">Learn More About Hosting</a>
+            </div>
+        </section>
+        
+    </main>
+
+</body>

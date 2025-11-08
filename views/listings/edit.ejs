@@ -1,0 +1,79 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <div class="row">
+    <div class="col-8 offset-3">
+    <br><br>
+    <h3>You are about to Edit this Listing</h3><br>
+
+    <form method="POST" action="/listings/<%= listing._id %>?_method=PUT" novalidate class="needs-validation"
+         enctype="multipart/form-data">
+
+        <div class="mb-3 ">
+             <label for="title" class="form-label">Title</Title></label>
+            <input name="listing[title]" value="<%= listing.title %>" type="text" class="form-control"
+            required>
+                    <div class="valid-feedback">
+                     Title looks good!
+                    </div>
+        </div>
+
+        <div class="mb-3 ">
+            <label for="Location" class="form-label">Description</Title></label>
+            <textarea name="listing[description]" class="form-control" 
+            required><%= listing.description %></textarea>
+                    <div class="invalid-feedback">
+                         Description should be vailid.
+                     </div>
+        </div>
+
+ 
+
+       <div class="mb-3">
+            <p><b>Original Image Preview</b></p>
+            <img src="<%= originalImageUrl %>" class="edit-img-preview" style="height: 150px; border-radius: 10px;">
+        </div>
+
+        <div class="mb-3">
+        <label for="image" class="form-label">Image URL</label>
+        <input name="listing[image]" value="<%= listing.image.url %>" type="file" 
+        class="form-control">
+                        <div class="invalid-feedback">
+                            Image URL should be vailid.
+                        </div>
+        </div>
+
+
+       <div class="row">
+            <div class="mb-3 col-md-4">
+                <label for="Location" class="form-label">Price</Title></label>
+                <input name="listing[price]" value="<%= listing.price%>"  type="number" class="form-control"
+                required>
+                    <div class="invalid-feedback">
+                         Price should be vailid.
+                     </div>
+                </div>
+            <div class="mb-3 col-md-8">
+                 <label for="Location" class="form-label">Location</Title></label>
+                <input name="listing[location]" value="<%= listing.location %>" type="text" class="form-control"
+                required>
+                    <div class="invalid-feedback">
+                         Location should be vailid.
+                     </div>
+             </div>
+        </div>
+       
+        <div class="mb-3 ">
+            <label for="Location" class="form-label">Country</Title></label>
+            <input name="listing[country]" value="<%= listing.country %>"  type="text" class="form-control"
+            required>
+                    <div class="invalid-feedback">
+                        Country should be vailid.
+                     </div>
+        </div>
+
+        <button type="submit" class="btn btn-dark">EDIT</button>
+        <br><br><br>
+        
+    </form>
+    </div></div>
+</body>
