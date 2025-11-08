@@ -1,7 +1,7 @@
 # Ethos: A Full-Stack Vacation Rental App
 
 <p align="center">
-  <img src="[Link to your Ethos logo or a screenshot of the homepage]" alt="Ethos Project Screenshot" width="600"/>
+  <img src="/public/icons/Ethos homepage.png" alt="Ethos Project Screenshot" width="600"/>
 </p>
 
 **Ethos** is a feature-rich web application inspired by Airbnb, designed to allow users to discover, list, and review unique places to stay. This project is a full-stack MERN application (using EJS for the frontend) that demonstrates a wide range of web development skills, including user authentication, third-party API integration, and cloud-based file management.
@@ -57,7 +57,7 @@ To run this project on your local machine, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/](https://github.com/)[YOUR_GITHUB_USERNAME]/ethos.git
+    git clone [https://github.com/](https://github.com/)[Harshit8bit]/ethos.git
     cd ethos
     ```
 
@@ -110,5 +110,5 @@ To run this project on your local machine, follow these steps:
 ## 👨‍💻 Author
 
 * **Harshit [Your Last Name]**
-* GitHub: [Your GitHub Username]
-* LinkedIn: [Your LinkedIn URL]
+* GitHub: [Harshit8bit]
+* LinkedIn: [www.linkedin.com/in/harshit-agarwal-bbb474326]
