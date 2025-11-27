@@ -7,6 +7,40 @@ body{
   min-height: 100vh;
 
 }
+/* --- DARK MODE OVERRIDES --- */
+
+/* 1. Fix the Footer Background & Text */
+[data-bs-theme="dark"] .f-info {
+    background-color: #2b3035; /* Dark grey to match Bootstrap */
+    color: #fff; /* White text */
+}
+
+/* 2. Fix the Footer Links */
+[data-bs-theme="dark"] .f-info-links a,
+[data-bs-theme="dark"] .f-info-brand, 
+[data-bs-theme="dark"] .f-info-socials i {
+    color: #b0b3b8; /* Softer white for links */
+}
+
+[data-bs-theme="dark"] .f-info-links a:hover,
+[data-bs-theme="dark"] .f-info-socials i:hover {
+    color: #fff; /* Bright white on hover */
+}
+
+/* 3. Fix the "Apple Style" Footer (if you used the updated code) */
+[data-bs-theme="dark"] .ethos-footer {
+    background-color: #1a1d20; /* Very dark grey */
+    border-top: 1px solid #495057;
+}
+
+[data-bs-theme="dark"] .footer-heading {
+    color: #e9ecef;
+}
+
+[data-bs-theme="dark"] .footer-links a,
+[data-bs-theme="dark"] .footer-desc {
+    color: #adb5bd;
+}
 
 /* homepage */
 /* Basic Body & Font Styling */

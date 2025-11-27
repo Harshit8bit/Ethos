@@ -20,7 +20,7 @@
   }
 </style>
 
-<nav class="navbar navbar-expand-lg bg-body-light border-bottom sticky-top">
+<nav class="navbar navbar-expand-md bg-body-tertiary border-bottom sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="/"><i class="fa-solid fa-house"> </i> ETHOS : Live Like You Belong</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,6 +39,16 @@
             <button class="btn btn-search" type="submit"> <i class="fa-solid fa-magnifying-glass"></i>Search</button>
           </form>
         </div>
+        <!-- dark mode -->
+
+              <div class="navbar-nav ms-2">
+                  <div class="nav-link d-flex align-items-center" id="themeToggle" style="cursor: pointer;">
+                      <span class="me-2">Dark Mode</span>
+                      <i class="fa-solid fa-moon" id="themeIcon"></i>
+                  </div>
+              </div>
+
+
   <!-- logIn Signout -->
         <div class="navbar-nav ms-auto">
           <a class="nav-link" href="/listings/new"><b>Add your House</b></a>
@@ -50,6 +60,9 @@
         <a class="nav-link" href="/logout">Log out</a>
           <% } %>
       </div>
+
+      
+
     </div>
   </div>
 </nav>
