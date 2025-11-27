@@ -34,8 +34,8 @@ app.engine('ejs', ejsMate);
 app.use(express.static(path.join(__dirname, "/public")));
 
 //MongoAtlas connection
-// const MONGO_URL = "mongodb://127.0.0.1:27017/ethos" //previous
-const dbUrl = process.env.ATLASDB_URL; 
+ const dbUrl = "mongodb://127.0.0.1:27017/ethos" //previous
+//const dbUrl = process.env.ATLASDB_URL; 
 
 const store = MongoStore.create({
   mongoUrl: dbUrl,
