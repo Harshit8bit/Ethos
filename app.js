@@ -34,8 +34,8 @@ app.engine('ejs', ejsMate);
 app.use(express.static(path.join(__dirname, "/public")));
 
 //MongoAtlas connection
- //const dbUrl = "mongodb://127.0.0.1:27017/ethos" //previous
-const dbUrl = process.env.ATLASDB_URL; 
+      const dbUrl = "mongodb://127.0.0.1:27017/ethos" //previous
+      //const dbUrl = process.env.ATLASDB_URL; 
 
 const store = MongoStore.create({
   mongoUrl: dbUrl,
@@ -114,6 +114,15 @@ app.get("/", wrapAsync (async (req , res) =>{
    const allListing =  await Listing.find({});
    res.render("listings/homepage.ejs", {allListing});
 }));
+
+
+app.get("/privacy", (req, res) => {
+    res.render("privacy.ejs");
+});
+
+app.get("/terms", (req, res) => {
+    res.render("terms.ejs");
+});
 
 
 
